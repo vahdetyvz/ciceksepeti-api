@@ -1,0 +1,42 @@
+{
+   "name": "vahdetyvz/ciceksepeti-api",
+   "description": "Çiçek Sepeti API",
+   "keywords": [
+       "vahdetyvz",
+       "ciceksepeti",
+       "ciceksepeti-api"
+   ],
+   "homepage": "https://github.com/vahdetyvz/ciceksepeti-api",
+   "license": "MIT",
+   "type": "library",
+   "authors": [
+       {
+           "name": "Vahdet Yavuz",
+           "email": "vahdetyvz@gmail.com",
+           "role": "Developer"
+       }
+   ],
+   "require": {
+       "php": "^7.1"
+   },
+   "require-dev": {
+       "phpunit/phpunit": "^7.0"
+   },
+   "autoload": {
+       "psr-4": {
+           "vahdetyvz\\CicekSepetiAPI\\": "src"
+       }
+   },
+   "autoload-dev": {
+       "psr-4": {
+           "vahdetyvz\\CicekSepetiAPI\\Tests\\": "tests"
+       }
+   },
+   "scripts": {
+       "test": "vendor/bin/phpunit",
+       "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+   },
+   "config": {
+       "sort-packages": true
+   }
+}
